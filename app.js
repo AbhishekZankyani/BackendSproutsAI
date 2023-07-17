@@ -5,7 +5,7 @@ const cors = require('cors')
 
 const mongoose= require('mongoose')
 const task = require('./Jobs/changeStatusJob')
-const url = process.env.DBURL
+const url = 'mongodb+srv://zankyaniabhishek:wocDDDQ0Xz3bUYvv@cluster0.jgykfzi.mongodb.net/SproutsAI'
 app.use(cors())
 mongoose.connect(url,{})
 const con = mongoose.connection
